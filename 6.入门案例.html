@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>3. Lucene框架的下载 · GitBook</title>
+        <title>6. 入门案例 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="4.全文检索流程分析.html" />
+    <link rel="next" href="7.Lucene底层存储原理分析.html" />
     
     
-    <link rel="prev" href="2.Lucene应用领域以及特性.html" />
+    <link rel="prev" href="5.环境搭建.html" />
     
 
     </head>
@@ -128,7 +128,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="3.Lucene框架的下载.html">
+        <li class="chapter " data-level="1.4" data-path="3.Lucene框架的下载.html">
             
                 <a href="3.Lucene框架的下载.html">
             
@@ -167,7 +167,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="6.入门案例.html">
+        <li class="chapter active" data-level="1.7" data-path="6.入门案例.html">
             
                 <a href="6.入门案例.html">
             
@@ -346,7 +346,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >3. Lucene框架的下载</a>
+        <a href="." >6. 入门案例</a>
     </h1>
 </div>
 
@@ -361,23 +361,91 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="lucene&#x6846;&#x67B6;&#x7684;&#x4E0B;&#x8F7D;">Lucene&#x6846;&#x67B6;&#x7684;&#x4E0B;&#x8F7D;</h1>
-<p>Lucene&#x7684;&#x4E0B;&#x8F7D;&#x975E;&#x5E38;&#x7684;&#x7B80;&#x5355;&#xFF0C;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x6B65;&#x9AA4;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x5566;&#xFF1A;</p>
-<ol>
-<li><p>&#x6253;&#x5F00;Lucene&#x5B98;&#x65B9;&#x7F51;&#x5740;&#xFF1A;<a href="http://lucene.apache.org&#xFF0C;&#x5E76;&#x70B9;&#x51FB;&#x5982;&#x4E0B;&#x6309;&#x94AE;" target="_blank">http://lucene.apache.org&#xFF0C;&#x5E76;&#x70B9;&#x51FB;&#x5982;&#x4E0B;&#x6309;&#x94AE;</a></p>
-<p><img src="images/1.png" alt=""></p>
+                                <h1 id="&#x5165;&#x95E8;&#x6848;&#x4F8B;">&#x5165;&#x95E8;&#x6848;&#x4F8B;</h1>
+<ul>
+<li><p>&#x521B;&#x5EFA;web&#x5DE5;&#x7A0B;</p>
 </li>
-</ol>
-<ol>
-<li><p><img src="images/2.png" alt=""></p>
+<li><p>&#x5BFC;&#x5165;jar&#x5305;</p>
+<ul>
+<li><p><img src="images/6.png" alt=""></p>
 </li>
-<li><p><img src="images/3.png" alt=""></p>
-<ol>
-<li>&#x4E0B;&#x8F7D;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x4E2A;zip&#x538B;&#x7F29;&#x5305;&#xFF0C;&#x76EE;&#x5F55;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</li>
-</ol>
+<li><p>jar&#x6587;&#x4EF6;&#x5206;&#x6790;</p>
+<ul>
+<li><p>lucene-core-x.x.x.jar&#xFF1A;lucene&#x6838;&#x5FC3;jar&#x5305;&#xFF08;<strong>&#x5FC5;&#x9009;</strong>&#xFF09;&#xFF0C;&#x8BE5;jar&#x5305;&#x653E;&#x5728;core&#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
 </li>
-</ol>
-<p><img src="images/4.png" alt="&#x3010;&#x3011;"></p>
+<li><p>lucene-analyzers-smartcn-x.x.x.jar&#xFF1A;&#x667A;&#x80FD;&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#x5668;jar&#x5305;&#xFF0C;&#x8FD9;&#x662F;lucene&#x63D0;&#x4F9B;&#x7684;&#x4E2D;&#x6587;&#x73AF;&#x5883;&#x4E0B;&#x6700;&#x597D;&#x7528;&#x7684;&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#x5668;&#xFF0C;&#x8BE5;jar&#x5305;&#x653E;&#x5728;analysis--&gt;smartcn&#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
+</li>
+<li><p>lucene-analyzers-common-x.x.x.jar&#xFF08;<strong>&#x5FC5;&#x9009;</strong>&#xFF09; : &#x5206;&#x8BCD;&#x5668;&#x516C;&#x5171;jar&#x5305;&#xFF0C;&#x5176;&#x5B83;&#x5206;&#x8BCD;&#x5668;&#x90FD;&#x4F1A;&#x4F9D;&#x8D56;&#x4E8E;&#x8BE5;jar&#x6587;&#x4EF6;&#xFF0C;</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x200B;                      &#x8BE5;jar&#x5305;&#x653E;&#x5728;analysis--&gt;common&#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
+<ul>
+<li><p>&#x6DFB;&#x52A0;&#x7D22;&#x5F15;&#x81F3;&#x7D22;&#x5F15;&#x5E93;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>import java.nio.file.Paths;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.document.StringField;
+import org.apache.lucene.document.TextField;
+import org.apache.lucene.document.Field.Store;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;
+
+public class IndexManager {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        try {
+            // 1&#x3001;&#x6307;&#x5B9A;lucene&#x7D22;&#x5F15;&#x5E93;&#x7684;&#x76EE;&#x5F55; FSDirectory&#x4EE3;&#x8868;&#x78C1;&#x76D8;&#x76EE;&#x5F55;
+            Directory directory = FSDirectory.open(Paths.get(&quot;I:\\lucene_db\\tb_article&quot;));
+
+            // 2&#x3001;&#x521B;&#x5EFA;&#x5206;&#x8BCD;&#x5668; &#x91C7;&#x7528;&#x667A;&#x80FD;&#x4E2D;&#x6587;&#x5206;&#x8BCD;&#x5668; &#x6CE8;&#x610F;&#xFF1A;&#x7D22;&#x5F15;&#x7684;CRUD&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5206;&#x8BCD;&#x5668;
+            Analyzer analyzer = new SmartChineseAnalyzer();
+            // 3&#x3001;&#x521B;&#x5EFA;IndexWriterConfig&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;IndexWriterConfig&#x5BF9;&#x8C61;&#x6765;&#x6307;&#x5B9A;&#x521B;&#x5EFA;&#x7D22;&#x5F15;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x6BD4;&#x5982;&#x6307;&#x5B9A;&#x4F7F;&#x7528;&#x4EC0;&#x4E48;&#x5206;&#x8BCD;&#x5668;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x62C6;&#x5206;&#x3001;&#x7D22;&#x5F15;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;
+            IndexWriterConfig config = new IndexWriterConfig(analyzer);
+            // &#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x7684;&#x521B;&#x5EFA;&#x65B9;&#x5F0F;
+            config.setOpenMode(OpenMode.CREATE_OR_APPEND);
+
+            // 4&#x3001;&#x521B;&#x5EFA;IndexWriter&#x5BF9;&#x8C61;&#x5E76;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5E93;&#x76EE;&#x5F55;&#x4E0E;config&#xFF0C;&#x7D22;&#x5F15;&#x7684;&#x521B;&#x5EFA;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664;&#x90FD;&#x662F;IndexWriter&#x6765;&#x5B9E;&#x73B0;
+            IndexWriter indexWriter = new IndexWriter(directory, config);
+
+            // 5&#x3001;&#x521B;&#x5EFA;Document&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;&#x8BE5;&#x5BF9;&#x8C61;&#x5C01;&#x88C5;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;
+            Document document = new Document();
+
+            /*
+             * 1. document.add(new Field(&#x5B57;&#x6BB5;&#x540D;, &#x5B57;&#x6BB5;&#x503C;&#xFF0C;&#x662F;&#x5426;&#x5B58;&#x50A8;); 2.
+             * StringField&#x4E0E;TextField&#x7684;&#x533A;&#x522B;&#x4E0E;&#x7279;&#x70B9;&#x4EE5;&#x53CA;Store.YES &#x4E0E; Store.NO&#x7684;&#x7279;&#x70B9;&#x5C06; &#x5728;Lucene&#x5E95;&#x5C42;&#x5B58;&#x50A8;&#x539F;&#x7406;&#x4E2D;&#x8BE6;&#x7EC6;&#x5206;&#x6790;
+             */
+            document.add(new StringField(&quot;articleId&quot;, &quot;0001&quot;, Store.YES));
+            document.add(new TextField(&quot;title&quot;, &quot;&#x957F;&#x6C99;&#x65C5;&#x6E38;&#x666F;&#x70B9;&quot;, Store.YES));
+            document.add(new TextField(&quot;content&quot;, &quot;&#x957F;&#x6C99;&#x5CB3;&#x9E93;&#x5C71;&#x98CE;&#x666F;&#x533A;&#xFF0C;&#x98CE;&#x666F;&#x4F18;&#x7F8E;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x4E0D;&#x9519;&#x7684;&#x65C5;&#x6E38;&#x666F;&#x70B9;&#x3002;&quot;, Store.YES));
+
+            // 6&#x3001;&#x901A;&#x8FC7;indexWriter&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;&#x81F3;&#x7D22;&#x5F15;&#x5E93;
+            indexWriter.addDocument(document);
+            // 7&#x3001;&#x63D0;&#x4EA4;&#x4E8B;&#x52A1;
+            indexWriter.commit();
+            // 8&#x3001;&#x5173;&#x95ED;&#x6D41;&#x8D44;&#x6E90;
+            indexWriter.close();
+            System.out.println(&quot;=======&#x7D22;&#x5F15;&#x521B;&#x5EFA;&#x6210;&#x529F;======&quot;);
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre></li>
+</ul>
+<p>&#x200B;       </p>
+<p>&#x200B;      </p>
+<p>&#x200B;                </p>
+<p>&#x200B;               </p>
 
                                 
                                 </section>
@@ -405,12 +473,12 @@
 
             
                 
-                <a href="2.Lucene应用领域以及特性.html" class="navigation navigation-prev " aria-label="Previous page: 2. Lucene应用领域以及特性">
+                <a href="5.环境搭建.html" class="navigation navigation-prev " aria-label="Previous page: 5. 环境搭建">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="4.全文检索流程分析.html" class="navigation navigation-next " aria-label="Next page: 4.全文检索流程分析">
+                <a href="7.Lucene底层存储原理分析.html" class="navigation navigation-next " aria-label="Next page: 7.Lucene底层存储原理分析">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -421,7 +489,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3. Lucene框架的下载","level":"1.4","depth":1,"next":{"title":"4.全文检索流程分析","level":"1.5","depth":1,"path":"4.全文检索流程分析.md","ref":"4.全文检索流程分析.md","articles":[]},"previous":{"title":"2. Lucene应用领域以及特性","level":"1.3","depth":1,"path":"2.Lucene应用领域以及特性.md","ref":"2.Lucene应用领域以及特性.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.Lucene框架的下载.md","mtime":"2019-06-19T05:54:13.773Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:13:35.450Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"6. 入门案例","level":"1.7","depth":1,"next":{"title":"7.Lucene底层存储原理分析","level":"1.8","depth":1,"path":"7.Lucene底层存储原理分析.md","ref":"7.Lucene底层存储原理分析.md","articles":[]},"previous":{"title":"5. 环境搭建","level":"1.6","depth":1,"path":"5.环境搭建.md","ref":"5.环境搭建.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"6.入门案例.md","mtime":"2019-06-20T06:51:19.324Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:13:35.450Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

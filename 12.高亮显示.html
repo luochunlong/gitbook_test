@@ -1,0 +1,593 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>12. 高亮显示 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="13.分页查询.html" />
+    
+    
+    <link rel="prev" href="11.查询语法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="1.Lucene概述.html">
+            
+                <a href="1.Lucene概述.html">
+            
+                    
+                    1. Lucene概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="2.Lucene应用领域以及特性.html">
+            
+                <a href="2.Lucene应用领域以及特性.html">
+            
+                    
+                    2. Lucene应用领域以及特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="3.Lucene框架的下载.html">
+            
+                <a href="3.Lucene框架的下载.html">
+            
+                    
+                    3. Lucene框架的下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="4.全文检索流程分析.html">
+            
+                <a href="4.全文检索流程分析.html">
+            
+                    
+                    4.全文检索流程分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="5.环境搭建.html">
+            
+                <a href="5.环境搭建.html">
+            
+                    
+                    5. 环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="6.入门案例.html">
+            
+                <a href="6.入门案例.html">
+            
+                    
+                    6. 入门案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="7.Lucene底层存储原理分析.html">
+            
+                <a href="7.Lucene底层存储原理分析.html">
+            
+                    
+                    7.Lucene底层存储原理分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="8.索引的管理.html">
+            
+                <a href="8.索引的管理.html">
+            
+                    
+                    8. 索引的管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="8.1索引检索.html">
+            
+                <a href="8.1索引检索.html">
+            
+                    
+                    8.1 索引检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="8.2索引删除.html">
+            
+                <a href="8.2索引删除.html">
+            
+                    
+                    8.2 索引删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="8.3索引更新.html">
+            
+                <a href="8.3索引更新.html">
+            
+                    
+                    8.3 索引更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="9.分词器.html">
+            
+                <a href="9.分词器.html">
+            
+                    
+                    9. 分词器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="10.多字段全文检索.html">
+            
+                <a href="10.多字段全文检索.html">
+            
+                    
+                    10. 多字段全文检索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="11.查询语法.html">
+            
+                <a href="11.查询语法.html">
+            
+                    
+                    11. 查询语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="12.高亮显示.html">
+            
+                <a href="12.高亮显示.html">
+            
+                    
+                    12. 高亮显示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="13.分页查询.html">
+            
+                <a href="13.分页查询.html">
+            
+                    
+                    13. 分页查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >12. 高亮显示</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9AD8;&#x4EAE;&#x663E;&#x793A;">&#x9AD8;&#x4EAE;&#x663E;&#x793A;</h1>
+<ul>
+<li>&#x4F55;&#x4E3A;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x5462;&#xFF0C;&#x6BD4;&#x5982;&#x6211;&#x4EEC;&#x8FDB;&#x5165;&#x4EAC;&#x4E1C;&#x5546;&#x57CE;&#x9996;&#x9875;&#xFF1A;&#x5728;&#x641C;&#x7D22;&#x680F;&#x4E2D;&#x8F93;&#x5165;&#x5173;&#x952E;&#x5B57;  <strong>&#x534E;&#x4E3A;&#x79FB;&#x52A8;&#x624B;&#x673A;</strong>&#xFF0C;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x663E;&#x793A;&#x51FA;&#x5982;&#x4E0B;&#x6548;&#x679C;&#xFF1A;</li>
+</ul>
+<p><img src="images/&#x534E;&#x4E3A;&#x624B;&#x673A;.png" alt=""></p>
+<p>&#x200B;    &#x67E5;&#x8BE2;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x4E2D;&#x51FA;&#x73B0; <strong>&#x534E;&#x4E3A; &#x79FB;&#x52A8; &#x624B;&#x673A;</strong> &#x5173;&#x952E;&#x8BCD;&#x7684;&#x90FD;&#x53D8;&#x6210;&#x4E86;&#x7EA2;&#x8272;&#x6548;&#x679C;&#xFF0C;&#x8FD9;&#x79CD;&#x6548;&#x679C;&#x7684;&#x5904;&#x7406;&#x6211;&#x4EEC;&#x79F0;&#x4E4B;&#x4E3A;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#xFF1B;</p>
+<ul>
+<li>&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x901A;&#x5E38;&#x4F1A;&#x628A;&#x5185;&#x5BB9;&#x622A;&#x53D6;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#xFF0C;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x6458;&#x8981;&#xFF0C;&#x5E76;&#x7A81;&#x51FA;&#xFF08;&#x9AD8;&#x4EAE;&#xFF09;&#x663E;&#x793A;&#x5173;&#x952E;&#x8BCD;&#x3002;
+&#x6240;&#x8C13;&#x9AD8;&#x4EAE;&#xFF1A;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x4E3A;&#x5173;&#x952E;&#x8BCD;&#x6DFB;&#x52A0;&#x524D;&#x7F00;&#x3001;&#x540E;&#x7F00;&#x6765;&#x5B9E;&#x73B0;&#x3002;&#x6BD4;&#x5982;&#x589E;&#x52A0;<b></b>&#x65E2;&#x53EF;&#x4EE5;&#x5C06;&#x5173;&#x952E;&#x8BCD;&#x52A0;&#x7C97;&#x663E;&#x793A;&#x3002;</li>
+<li>&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x9700;&#x8981;highlighter\lucene-highlighter-x.x.x.jar&#x548C;memory\lucene-memory-x.x.x.jar&#x4E24;&#x4E2A;&#x76EE;&#x5F55;&#x4E0B;&#x7684;jar&#x5305;,&#x5728;&#x8FDB;&#x884C;&#x5168;&#x6587;&#x68C0;&#x7D22;&#x7684;&#x65F6;&#x5019;&#x8C03;&#x7528;&#x9AD8;&#x4EAE;&#x76F8;&#x5173;API&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x9AD8;&#x4EAE;&#x6548;&#x679C;&#xFF1B;</li>
+</ul>
+<ul>
+<li><p>&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x6838;&#x5FC3;API</p>
+<ul>
+<li>Formatter- &#x5B83;&#x662F;&#x8D1F;&#x8D23;&#x6307;&#x5B9A;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x7684;&#x683C;&#x5F0F;&#x3002;&#x6BD4;&#x5982;SimpleHTMLFormatter(String preTag, String postTag) </li>
+<li>Scorer&#xFF0D;&#x5B83;&#x7528;&#x4E8E;&#x5305;&#x88C5;&#x67E5;&#x8BE2;&#xFF0C;&#x5B83;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x5173;&#x952E;&#x8BCD;&#x4FE1;&#x606F;&#x3002;</li>
+<li>Highlighter&#xFF0D;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#x3002;
+Highlighter(Formatter,Scorer)
+&#x8C03;&#x7528;Highlighter&#x7684;getBestFragment&#x5373;&#x53EF;&#x83B7;&#x53D6;&#x9AD8;&#x4EAE;&#x540E;&#x7684;&#x6587;&#x672C;&#x7247;&#x6BB5;&#x3002;</li>
+<li>Fragmenter&#xFF1A;&#x7528;&#x4E8E;&#x622A;&#x53D6;&#x9AD8;&#x4EAE;&#x6587;&#x672C;&#x7684;&#x5176;&#x4E2D;&#x90E8;&#x5206;&#x3002;</li>
+</ul>
+</li>
+<li><p>&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x7684;&#x7F16;&#x7A0B;&#x6B65;&#x9AA4;</p>
+<ol>
+<li>&#x5148;&#x8981;&#x521B;&#x5EFA;Formatter&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x9AD8;&#x4EAE;&#x7684;&#x683C;&#x5F0F;&#x3002;</li>
+<li>&#x521B;&#x5EFA;Scorer&#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x5C01;&#x88C5;&#x4E86;Query&#x5BF9;&#x8C61;&#x3002;Scorer&#x5BF9;&#x8C61;&#x91CC;&#x5305;&#x88C5;&#x7684;&#x662F;&#x5173;&#x952E;&#x8BCD;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x4EE5;Formatter&#x3001;Scorer&#x5BF9;&#x8C61;&#x521B;&#x5EFA;Highlighter&#x5DE5;&#x5177;&#x3002;</li>
+<li>&#x8C03;&#x7528;Highlighter&#x5BF9;&#x8C61;&#x7684;getBestFragment&#x6765;&#x8FD4;&#x56DE;&#x9AD8;&#x4EAE;&#x6587;&#x672C;&#x3002;</li>
+<li>&#x53EF;&#x9009;&#x7684;&#x622A;&#x65AD;&#xFF1A;&#x8C03;&#x7528;Highlighter&#x7684;setTextFragmenter()&#x65B9;&#x6CD5;&#x63A7;&#x5236;&#x9AD8;&#x4EAE;&#x6587;&#x672C;&#x7684;&#x622A;&#x65AD;&#x3002;</li>
+<li>&#x8C03;&#x7528;highlighter.getBestFragment()&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x6570;&#x636E;&#x7684;&#x83B7;&#x53D6;</li>
+</ol>
+</li>
+</ul>
+<ul>
+<li><p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<p>```
+import java.nio.file.Paths;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.DirectoryReader;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
+import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.highlight.Formatter;
+import org.apache.lucene.search.highlight.Fragmenter;
+import org.apache.lucene.search.highlight.Highlighter;
+import org.apache.lucene.search.highlight.QueryScorer;
+import org.apache.lucene.search.highlight.Scorer;
+import org.apache.lucene.search.highlight.SimpleFragmenter;
+import org.apache.lucene.search.highlight.SimpleHTMLFormatter;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;</p>
+<p>public class IndexManager {</p>
+</li>
+</ul>
+<pre><code>  public static void main(String[] args) {
+      try {
+          //&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x5E93;&#x7684;&#x76EE;&#x5F55;
+          Directory directory = FSDirectory.open(Paths.get(&quot;I:\\lucene_db\\tb_article&quot;));
+
+          //DirectoryReader&#x7684;open&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x7D22;&#x5F15;&#x5E93;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x76F8;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;
+          IndexReader indexReader = DirectoryReader.open(directory);
+
+          //&#x521B;&#x5EFA;IndexSearcher&#x5BF9;&#x8C61;&#xFF0C;&#x901A;&#x8FC7;IndexSearcher&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x5168;&#x6587;&#x68C0;&#x7D22;&#x5B9E;&#x73B0;
+          IndexSearcher  indexSearcher = new IndexSearcher(indexReader);
+
+          //&#x521B;&#x5EFA;&#x667A;&#x80FD;&#x5206;&#x8BCD;&#x5668;,&#x5BF9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x5206;&#x8BCD;   &#x6CE8;&#x610F;&#xFF1A;&#x7D22;&#x5F15;&#x7684;CRUD&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5206;&#x8BCD;&#x5668;   
+          Analyzer analyzer = new SmartChineseAnalyzer();
+
+          //&#x521B;&#x5EFA;QueryParse&#x5B9E;&#x4F8B;   &#x901A;&#x8FC7;QueryParse&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5;&#x4EE5;&#x53CA;&#x5206;&#x8BCD;&#x5668;&#x4FE1;&#x606F;
+          QueryParser queryParser = new MultiFieldQueryParser(new String[]{&quot;title&quot;,&quot;content&quot;}, analyzer);
+
+          //&#x901A;&#x8FC7;QueryParser&#x5F97;&#x5230;query&#x5B9E;&#x4F8B;,&#x5E76;&#x6307;&#x5B9A;&#x7684;&#x68C0;&#x7D22;&#x7684;&#x5173;&#x952E;&#x8BCD;
+          Query query = queryParser.parse(&quot;&#x957F;&#x6C99;&#x65C5;&#x6E38;&#x6307;&#x5357;&quot;);
+
+
+          /**********&#x9AD8;&#x4EAE;&#x76F8;&#x5173;&#x4EE3;&#x7801;begin**********/
+          //1&#x3001;&#x521B;&#x5EFA;&#x683C;&#x5F0F;&#x5668;&#xFF0C;&#x901A;&#x8FC7;&#x683C;&#x5F0F;&#x5668;&#x6307;&#x5B9A;&#x600E;&#x6837;&#x5BF9;&#x5173;&#x952E;&#x5B57;&#x8FDB;&#x884C;&#x5904;&#x7406;    
+          Formatter formatter = new SimpleHTMLFormatter(&quot;&lt;font color=&apos;red&apos;&gt;&quot;, &quot;&lt;/font&gt;&quot;);
+
+          //&#x901A;&#x8FC7;Scorer&#x5305;&#x88C5;query&#x5B9E;&#x4F8B;
+          Scorer fragmentScorer = new QueryScorer(query);
+
+          //&#x521B;&#x5EFA;&#x9AD8;&#x4EAE;&#x5668;&#xFF0C;&#x9AD8;&#x4EAE;&#x6548;&#x679C;&#x7684;&#x5B9E;&#x73B0;&#x6700;&#x7EC8;&#x9700;&#x8981;&#x901A;&#x8FC7;Highlighter&#x6765;&#x5B9E;&#x73B0;
+          Highlighter highlighter = new Highlighter(formatter, fragmentScorer);
+
+          //&#x521B;&#x5EFA;Fragmenter&#x5B9E;&#x4F8B;&#xFF0C;SimpleFragmenter&#x6784;&#x9020;&#x5668;&#x4E2D;&#x7684;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x7684;&#x9AD8;&#x4EAE;&#x6587;&#x672C;&#x7247;&#x6BB5;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#xFF1B;
+          Fragmenter fragmenter = new SimpleFragmenter(10);
+          //&#x5C06;&#x683C;&#x5F0F;&#x5316;&#x7247;&#x6BB5;&#x5B9E;&#x4F8B;&#x4E0E;&#x9AD8;&#x4EAE;&#x5668;&#x5173;&#x8054;      
+          highlighter.setTextFragmenter(fragmenter);
+
+
+          /**********&#x9AD8;&#x4EAE;&#x76F8;&#x5173;&#x4EE3;&#x7801;end**********/
+
+          //&#x67E5;&#x8BE2;&#x7D22;&#x5F15;&#x8868;&#xFF0C;&#x6700;&#x7EC8;&#x6570;&#x636E;&#x90FD;&#x88AB;&#x5C01;&#x88C5;&#x5728; TopDocs&#x7684;&#x5B9E;&#x4F8B;&#x4E2D;
+          TopDocs topDocs = indexSearcher.search(query,10);
+
+          //&#x901A;&#x8FC7;topDocs&#x83B7;&#x53D6;&#x5339;&#x914D;&#x5168;&#x90E8;&#x8BB0;&#x5F55;
+          ScoreDoc[] scoreDocs = topDocs.scoreDocs;
+
+          for (int i = 0; i &lt; scoreDocs.length; i++) {
+              //&#x83B7;&#x53D6;&#x8BB0;&#x5F55;&#x7684;id
+              int id = scoreDocs[i].doc;
+              //&#x6587;&#x7AE0;&#x7684;&#x5F97;&#x5206;
+              float score = scoreDocs[i].score;
+              System.out.println(&quot;id:&quot;+id+&quot; &#x5206;&#x7AE0;&#x7684;&#x5F97;&#x5206;&#xFF1A;&quot;+score);
+              //&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x8868;
+              Document document = indexSearcher.doc(id);
+              //&#x83B7;&#x53D6;&#x6807;&#x9898;&#x4FE1;&#x606F;  &#x9AD8;&#x4EAE;&#x524D;title
+              String title = document.get(&quot;title&quot;);
+              //&#x83B7;&#x53D6;&#x5185;&#x5BB9;&#x4FE1;&#x606F;   &#x9AD8;&#x4EAE;&#x524D;content
+              String content = document.get(&quot;content&quot;);
+              System.out.println(&quot; &#x9AD8;&#x4EAE;&#x524D;title:&quot;+title+&quot;\t &#x9AD8;&#x4EAE;&#x524D;content:&quot;+content);
+
+              /*
+               *&#x901A;&#x8FC7;&#x9AD8;&#x4EAE;&#x5668;&#x5BF9;title&#x548C;content&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x5904;&#x7406;  
+               *getBestFragment&#x65B9;&#x6CD5;&#x4E2D;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1A;1&#x3001;&#x5206;&#x8BCD;&#x5668;   2&#x3001;&#x54EA;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;   3&#x3001;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x7684;&#x6587;&#x672C;&#x4FE1;&#x606F; 
+               *&#x5907;&#x6CE8;&#xFF1A;&#x5982;&#x679C;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x9AD8;&#x4EAE;&#x7684;&#x6587;&#x672C;&#x4FE1;&#x606F;&#x4E0D;&#x5305;&#x62EC;&#x67E5;&#x8BE2;&#x7684;&#x5173;&#x952E;&#x5B57;&#x5219;getBestFragment&#x4F1A;&#x8FD4;&#x56DE;null&#x51FA;&#x53BB;
+               * */
+              String postTitle = highlighter.getBestFragment(analyzer, &quot;title&quot;, title);
+              String postContent = highlighter.getBestFragment(analyzer, &quot;content&quot;, content);
+
+              System.out.println(&quot; &#x9AD8;&#x4EAE;&#x540E;title:&quot;+postTitle+&quot;\t &#x9AD8;&#x4EAE;&#x540E;content:&quot;+postContent);
+
+          }
+
+      } catch (Exception e) {
+          // TODO: handle exception
+          e.printStackTrace();
+      }
+  }
+</code></pre><p>  }</p>
+<pre><code>
+
+
+
+* &#x68C0;&#x7D22;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;
+</code></pre><p>   &#x9AD8;&#x4EAE;&#x524D;title:&#x65C5;&#x6E38;&#x666F;&#x70B9;     &#x9AD8;&#x4EAE;&#x524D;content:&#x957F;&#x6C99;&#x5CB3;&#x9E93;&#x5C71;&#x98CE;&#x666F;&#x533A;&#xFF0C;&#x98CE;&#x666F;&#x4F18;&#x7F8E;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x4E0D;&#x9519;&#x7684;&#x65C5;&#x6E38;&#x666F;&#x70B9;&#x3002;</p>
+<p>   &#x9AD8;&#x4EAE;&#x540E;title:<font color="red">&#x65C5;&#x6E38;</font>&#x666F;&#x70B9;     &#x9AD8;&#x4EAE;&#x540E;content:<font color="red">&#x957F;&#x6C99;</font>&#x5CB3;&#x9E93;&#x5C71;&#x98CE;&#x666F;&#x533A;
+  ```</p>
+<p>  &#x901A;&#x8FC7;&#x6253;&#x5370;&#x7684;&#x7ED3;&#x679C;&#x53D1;&#x73B0; <strong>&#x65C5;&#x6E38;  &#x957F;&#x6C99;</strong> &#x5173;&#x952E;&#x8BCD;&#x88AB;<code>&lt;font color=&apos;red&apos;&gt;&lt;/font&gt;</code>&#x6807;&#x7B7E;&#x5305;&#x88F9;&#xFF0C;&#x610F;&#x5473;&#x7740;&#x5C06;&#x9AD8;&#x4EAE;&#x540E;&#x7684;&#x4FE1;&#x606F;&#x653E;&#x5728;&#x7F51;&#x9875;&#x4E2D;&#x663E;&#x793A;&#x5373;&#x53EF;&#x770B;&#x5230;&#x7EA2;&#x8272;&#x5B57;&#x4F53;&#x6548;&#x679C;&#x5566;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="11.查询语法.html" class="navigation navigation-prev " aria-label="Previous page: 11. 查询语法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="13.分页查询.html" class="navigation navigation-next " aria-label="Next page: 13. 分页查询">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"12. 高亮显示","level":"1.13","depth":1,"next":{"title":"13. 分页查询","level":"1.14","depth":1,"path":"13.分页查询.md","ref":"13.分页查询.md","articles":[]},"previous":{"title":"11. 查询语法","level":"1.12","depth":1,"path":"11.查询语法.md","ref":"11.查询语法.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"12.高亮显示.md","mtime":"2019-06-20T06:20:32.133Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:13:35.450Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
