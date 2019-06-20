@@ -430,14 +430,13 @@ NOT
 </table>
 <ul>
 <li><p>&#x6848;&#x4F8B;&#xFF1A;        </p>
-<pre><code>        //&#x521B;&#x5EFA;QueryParse&#x5B9E;&#x4F8B;   &#x901A;&#x8FC7;QueryParse&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5; &#x4EE5;&#x53CA; &#x5206;&#x8BCD;&#x5668;&#x4FE1;&#x606F;
-        QueryParser queryParser = new QueryParser(&quot;title&quot;, analyzer);
-
-        //&#x901A;&#x8FC7;QueryParser&#x5F97;&#x5230;query&#x5B9E;&#x4F8B;,&#x5E76;&#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x7684;&#x5173;&#x952E;&#x5B57;
-        Query query = queryParser.parse(&quot;&#x957F;&#x6C99;  AND  &#x666F;&#x533A; &quot;);
-</code></pre></li>
+<pre><code>    //&#x521B;&#x5EFA;QueryParse&#x5B9E;&#x4F8B;   &#x901A;&#x8FC7;QueryParse&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5B57;&#x6BB5; &#x4EE5;&#x53CA; &#x5206;&#x8BCD;&#x5668;&#x4FE1;&#x606F;
+</code></pre><p>  <code>QueryParser queryParser = new QueryParser(&quot;title&quot;, analyzer);</code></p>
+<p>  //&#x901A;&#x8FC7;QueryParser&#x5F97;&#x5230;query&#x5B9E;&#x4F8B;,&#x5E76;&#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x67E5;&#x8BE2;&#x7684;&#x5173;&#x952E;&#x5B57;
+  <code>Query query = queryParser.parse(&quot;&#x957F;&#x6C99;  AND  &#x666F;&#x533A; &quot;);</code></p>
+</li>
 </ul>
-<p>&#x200B;       &#x5982;&#x4E0A;&#x4EE3;&#x7801;&#x8868;&#x793A;&#x6839;&#x636E;title&#x8FDB;&#x884C;&#x68C0;&#x7D22;&#xFF0C;&#x6807;&#x9898;&#x4E2D;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x957F;&#x6C99; &#x4EE5;&#x53CA;  &#x666F;&#x533A;</p>
+<p>&#x200B;         &#x5982;&#x4E0A;&#x4EE3;&#x7801;&#x8868;&#x793A;&#x6839;&#x636E;title&#x8FDB;&#x884C;&#x68C0;&#x7D22;&#xFF0C;&#x6807;&#x9898;&#x4E2D;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x957F;&#x6C99; &#x4EE5;&#x53CA;  &#x666F;&#x533A;</p>
 
                                 
                                 </section>
@@ -481,7 +480,7 @@ NOT
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"11. 查询语法","level":"1.12","depth":1,"next":{"title":"12. 高亮显示","level":"1.13","depth":1,"path":"12.高亮显示.md","ref":"12.高亮显示.md","articles":[]},"previous":{"title":"10. 多字段全文检索","level":"1.11","depth":1,"path":"10.多字段全文检索.md","ref":"10.多字段全文检索.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11.查询语法.md","mtime":"2019-06-20T03:33:42.116Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T07:13:35.450Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"11. 查询语法","level":"1.12","depth":1,"next":{"title":"12. 高亮显示","level":"1.13","depth":1,"path":"12.高亮显示.md","ref":"12.高亮显示.md","articles":[]},"previous":{"title":"10. 多字段全文检索","level":"1.11","depth":1,"path":"10.多字段全文检索.md","ref":"10.多字段全文检索.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11.查询语法.md","mtime":"2019-06-20T07:52:38.856Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-20T08:33:15.162Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
